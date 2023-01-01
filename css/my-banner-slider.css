@@ -1,0 +1,97 @@
+/**
+ * Plugin criado por:
+ * Paulo Cezario
+ * https://github.com/phscezario
+ **/
+
+.my-banner-slider {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.my-banner-slider .item, .my-banner-slider .nav, .my-banner-slider .left-arrow, .my-banner-slider .right-arrow {
+    position: absolute;
+}
+.my-banner-slider .left-arrow, .my-banner-slider .right-arrow, .my-banner-slider .nav span {
+    cursor: pointer;
+    -moz-opacity: 0;
+    opacity:0;
+    filter: alpha(opacity=0);
+}
+.my-banner-slider .item .bg {
+    width: 100%;
+    height: 100%;
+}
+.my-banner-slider .item {
+    transition: 1s;
+    background-size: 100% 100% !important;
+    width: 100%;
+    background-attachment: scroll !important;
+    -moz-opacity: 0;
+    opacity:0;
+    filter: alpha(opacity=0);
+}
+.my-banner-slider .nav{
+    height: 20px;
+    width: 100%;
+    bottom: 5px;
+    text-align: center;
+    z-index: 2;
+}
+.my-banner-slider .nav span{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border-radius: 5px;
+    background: #ccc;
+    transition: .2s;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+}
+.my-banner-slider .nav span:hover{
+    background: #333;
+}
+.my-banner-slider .nav span.active{
+    background: #000;
+}
+.my-banner-slider .left-arrow{
+    left: 10px;
+}
+.my-banner-slider .right-arrow{
+    right: 10px;
+}
+.my-banner-slider .left-arrow, .my-banner-slider .right-arrow{
+    top: 50%;
+    width: 52px;
+    height: 52px;
+    line-height: 40px !important;
+    background: #FFF;
+    color: #000;
+}
+.my-banner-slider [rel="active-banner"], .my-banner-slider:hover .left-arrow, .my-banner-slider:hover .right-arrow, .my-banner-slider:hover .nav span{
+    -moz-opacity: 1;
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+.my-banner-slider .left-arrow, .my-banner-slider .right-arrow{
+    font: normal 50pt sans-serif;
+    text-align:center;
+    transition: .2s;
+    z-index: 2;
+}
+.my-banner-slider .left-arrow:hover, .my-banner-slider .right-arrow:hover{
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+@media (max-width: 600px) {
+    .my-banner-slider .left-arrow, .my-banner-slider .right-arrow{
+        display: none;
+    }
+    .my-banner-slider .nav span{
+        -moz-opacity: 1;
+        opacity:1;
+        filter: alpha(opacity=100);
+    }
+}
