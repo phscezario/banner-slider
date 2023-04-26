@@ -1,7 +1,6 @@
 # Banner rotativo
 
-<a href="https://jsfiddle.net/phscezario/jam9xL50/15/" target="new">Veja aqui</a>
-Talvez não apresente a ultima versão postada!
+<a href="https://phscezario.github.io/banner-slider/">Veja a DEMO aqui</a>
 
 ## Como usar:
 
@@ -18,5 +17,3 @@ Talvez não apresente a ultima versão postada!
 <p>Cada filho é definido por uma DIV com a classe "item": "div class="item"</p>
 <p>Uma imagem com o atributo class="bg", define que a mesma irá se tornar o background do mesmo slide.</p>
 <p>Você pode colocar qualquer conteúdo dentro do slide, eles ficam a critério do utilizador.</p>
-
-
